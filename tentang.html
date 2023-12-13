@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restoran</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .wrapper {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex; /* Menggunakan flexbox */
+            justify-content: space-between; /* Menempatkan logo dan navigasi di kedua ujung header */
+            align-items: center; /* Tengah secara vertikal */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        section.about {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <!-- Ganti dengan gambar logo restoran -->
+                <img src="images/restaurant.png" alt="Restaurant Logo" width="60" height="60">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html" class="current">Tentang Kami</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="about">
+            <img src="images/chef.png" alt="Tentang Restoran" width="500" height="300">
+            <p>Restoran kami didirikan pada tahun 2023 dengan visi untuk Menghadirkan berbagai jenis makanan khas Eropa dengan harga yang dapat dijangkau semua kalangan.</p>
+            <p>Dan Misi Untuk Menghidangkan aneka jenis kuliner Eropa yang dapat diterima oleh konsumen di Indonesia.
+                Memperkenal masakan khas Eropa kepada Indonesia.
+                Mengembangkan restoran makan Eropa dengan sistem franchise.
+                Memperketat pengawasan mutu bahan makanan sehingga mampu menciptakan hidangan berkualitas tinggi.</p>
+            <p>Nilai-nilai kami meliputi kesegaran, kreativitas, dan pelayanan terbaik untuk pelanggan.</p>
+        </section>
+        <footer>
+            &copy; instagram: Restoran_ID
+        </footer>
+    </div><!-- .wrapper -->
+</body>
+</html>

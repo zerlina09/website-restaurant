@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restoran</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .wrapper {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Menengahkan konten */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex; /* Menggunakan flexbox */
+            justify-content: space-between; /* Menempatkan logo dan navigasi di kedua ujung header */
+            align-items: center; /* Tengah secara vertikal */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .courses {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Menengahkan konten */
+        }
+
+        .food-image {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .food-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .food-image:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+		 .map-container {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <!-- Ganti dengan gambar logo restoran -->
+				<title>Restaurant</title>
+                <img src="images/restaurant.png" alt="Restaurant Logo" width="60" height="60">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+		<section class="about">
+            <img src="images/chef.png" alt="Tentang Restoran" width="500" height="300">
+            <p>Restoran kami didirikan pada tahun 2023 dengan visi untuk Menghadirkan berbagai jenis makanan khas Eropa dengan harga yang dapat dijangkau semua kalangan.</p>
+            <p>Dan Misi Untuk Menghidangkan aneka jenis kuliner Eropa yang dapat diterima oleh konsumen di Indonesia.
+                Memperkenal masakan khas Eropa kepada Indonesia.
+                Mengembangkan restoran makan Eropa dengan sistem franchise.
+                Memperketat pengawasan mutu bahan makanan sehingga mampu menciptakan hidangan berkualitas tinggi.</p>
+        </section>
+        <section class="courses">
+            <div class="food-image">
+                <img src="images/maincoursse2.png" alt="Menu 1">
+            </div>
+            <div class="food-image">
+                <img src="images/appetizer1.png" alt="Menu 2">
+            </div>
+            <!-- Tambahkan gambar makanan lainnya di sini -->
+            <div class="food-image">
+                <img src="images/appetizer2.png" alt="Menu 3">
+            </div>
+            <div class="food-image">
+                <img src="images/apptizer3.jpeg" alt="Menu 4">
+            </div>
+        </section>
+		<section class="contact">
+            <h2>Hubungi Kami</h2>
+            <div class="form-container">
+                <form action="https://wa.me/PhoneNumber" method="get">
+                    <input type="text" name="name" placeholder="Nama Anda"><br>
+                    <input type="text" name="email" placeholder="Email Anda"><br>
+                    <textarea name="message" placeholder="Pesan Anda"></textarea><br>
+                    <input type="submit" value="Kirim">
+                </form>
+                
+                <div class="map-container">
+                    <!-- Google Maps embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.558888883116!2d106.79964981476997!3d-6.180128995517853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a02d011641845%3A0x7dc9f3bb1dc12fe1!2sYour%20Restaurant%20Address!5e0!3m2!1sen!2sid!4v1644260833898!5m2!1sen!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <footer>
+            &copy; instagram: Restoran_ID
+        </footer>
+    </div><!-- .wrapper -->
+</body>
+</html>
